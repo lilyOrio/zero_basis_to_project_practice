@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomButton">
+        <!-- 属性名称为 customButtonStyles，属性格式为引用类型reference -->
+        <attr name="customButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomPagerTab">
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>
