@@ -35,10 +35,11 @@ public class ForegroundServiceActivity extends AppCompatActivity implements View
                 return;
             }
             Intent intent = new Intent(this, MusicService.class);
-            intent.putExtra("is_play",isPlaying);
-            intent.putExtra("song",et_song.getText().toString());
+            intent.putExtra("is_play", isPlaying);
+            intent.putExtra("song", et_song.getText().toString());
             startService(intent);
             isPlaying = !isPlaying;
+            btn_send_service.setText(isPlaying ? "暂停音乐" : "播放音乐");
             Log.d("lily", "onClick: ");
         }
     }
