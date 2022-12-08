@@ -36,17 +36,17 @@ public class MusicService extends Service {
         return mBinder; // 返回该服务的粘合剂对象
     }
 
-   private Handler mHandler = new Handler(Looper.myLooper());
+    private Handler mHandler = new Handler(Looper.myLooper());
 
     //定义一个音乐播放任务
     private Runnable mPlay = new Runnable() {
         @Override
         public void run() {
-            if (isPlaying){
-                if (mProcess < 100){
+            if (isPlaying) {
+                if (mProcess < 100) {
                     mProcess += 2;
-                    mHandler.postDelayed(this,1000);
-                }else {
+                    mHandler.postDelayed(this, 1000);
+                } else {
                     mProcess = 100;
                 }
             }
@@ -56,16 +56,16 @@ public class MusicService extends Service {
     };
 
     private void sendNotify(Context ctx, String song, boolean isPlaying, int progress) {
-        String message = String.format("歌曲%s",isPlaying?"正在播放":"暂停播放");
+        String message = String.format("歌曲%s", isPlaying ? "正在播放" : "暂停播放");
         Log.d("lily", message);
         //创建一个跳转到活动界面的意图
         Intent intent = new Intent(ctx, MainActivity.class);
         //创建一个用于跳转页面的活动意图
         PendingIntent clickIntent = PendingIntent.getActivity(ctx, R.string.app_name,
-                intent,PendingIntent.FLAG_IMMUTABLE);
+                intent, PendingIntent.FLAG_IMMUTABLE);
         Notification.Builder builder = new Notification.Builder(ctx);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            builder = new Notification.Builder(ctx,getString(R.string.app_name));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            builder = new Notification.Builder(ctx, getString(R.string.app_name));
         }
         builder.setContentIntent(clickIntent) // 设置内容的点击意图
                 .setSmallIcon(R.drawable.tt_s) // 设置应用名称左边的小图标
@@ -75,7 +75,7 @@ public class MusicService extends Service {
                 .setContentTitle(song) // 设置通知栏里面的标题文本
                 .setContentText(message); // 设置通知栏里面的内容文本
         Notification notify = builder.build();
-        startForeground(2,notify);
+        startForeground(2, notify);
     }
 
     @Override
