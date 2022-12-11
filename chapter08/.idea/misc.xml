@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android2022/demo_zero/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_foregrand_service.xml" value="0.26851851851851855" />
+        <entry key="..\:/Android2022/demo_zero/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/drawable/tab_first_selector.xml" value="0.1" />
+        <entry key="..\:/Android2022/demo_zero/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/drawable/tab_text_selector.xml" value="0.1245" />
+        <entry key="..\:/Android2022/demo_zero/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_button.xml" value="0.264" />
         <entry key="..\:/demo/chapter08/app/src/main/res/layout/activity_custom_tab.xml" value="0.2875" />
         <entry key="..\:/demo/chapter08/app/src/main/res/layout/activity_main.xml" value="0.26614583333333336" />
         <entry key="..\:/demo/chapter08/app/src/main/res/layout/activity_measure_layout.xml" value="0.2453125" />
@@ -13,30 +17,14 @@
         <entry key="..\:/demo/chapter08/app/src/main/res/layout/item_select.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/chapter08/app/src/release/res/layout/activity_month_picker.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/drawable/editext_selector.xml" value="0.1" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/drawable/indicator_selector.xml" value="0.1975" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/drawable/shape_edit_focus.xml" value="0.12" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/drawable/shape_edit_normal.xml" value="0.14666666666666667" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/drawable/shape_white.xml" value="0.15" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_banner_pager.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_custom_tab.xml" value="0.2875" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_float_notice.xml" value="0.25052083333333336" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_handler_post.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_noscroll_list.xml" value="0.26458333333333334" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_notify_channel.xml" value="0.21822916666666667" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_notify_simpel.xml" value="0.2421875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_notify_simple.xml" value="0.2640625" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_pie_animation.xml" value="0.26614583333333336" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/activity_view_invalidate.xml" value="0.2875" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/banner_pager.xml" value="0.2875" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/float_notice.xml" value="0.2296875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/app/src/main/res/layout/item_list.xml" value="0.2875" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2055" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/drawable/tab_bg_selector.xml" value="0.174" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_button.xml" value="0.1" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_navigation.xml" value="0.1" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_dashboard.xml" value="0.26666666666666666" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_home.xml" value="0.26666666666666666" />
-        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/menu/bottom_nav_menu.xml" value="0.278125" />
       </map>
     </option>
   </component>
