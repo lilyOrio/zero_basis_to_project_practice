@@ -28,7 +28,7 @@ public class RecyclerLinearActivity extends AppCompatActivity {
         // 构建一个公众号列表的线性适配器
         RecyclerLinearAdapter adapter = new RecyclerLinearAdapter(this, NewsInfo.getDefaultList());
         rv_linear.setAdapter(adapter);  // 设置循环视图的线性适配器
-//        rv_linear.setItemAnimator(new DefaultItemAnimator());  // 设置循环视图的动画效果
-//        rv_linear.addItemDecoration(new SpacesDecoration(1));
+        rv_linear.setItemAnimator(new DefaultItemAnimator());  // 设置循环视图的动画效果
+        rv_linear.addItemDecoration(new SpacesDecoration(1));
     }
 }

@@ -31,7 +31,7 @@ public class RecyclerLinearAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_linear, null);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_linear, parent,false);
         return new ItemHolder(view);
     }
 
