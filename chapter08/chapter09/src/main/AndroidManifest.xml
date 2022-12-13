@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppCompatTheme">
         <activity
-            android:name=".OverflowMenuActivity"
+            android:name=".TabLayoutActivity"
             android:exported="true"
             android:label="@string/title_activity_tab_navigation">
             <intent-filter>

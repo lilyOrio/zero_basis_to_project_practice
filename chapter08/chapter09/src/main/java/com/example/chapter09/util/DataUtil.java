@@ -8,7 +8,7 @@ import java.util.Date;
 @SuppressLint("SimpleDateFormat")
 public class DataUtil {
 
-    public static String getNowDataTime(String formatStr){
+    public static String getNowDateTime(String formatStr){
         String format = formatStr;
         if (TextUtils.isEmpty(formatStr)){
             format = "yyyyMMddHHmmss";
