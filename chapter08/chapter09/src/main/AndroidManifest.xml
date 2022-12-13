@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/AppCompatTheme">
         <activity
-            android:name=".TabPagerActivity"
+            android:name=".ToolbarActivity"
             android:exported="true"
             android:label="@string/title_activity_tab_navigation">
             <intent-filter>
