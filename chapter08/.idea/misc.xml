@@ -29,6 +29,7 @@
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_overflow_menu.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_recycler_grid.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_recycler_linear.xml" value="0.2875" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_recycler_staggered.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_button.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_layout.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_pager.xml" value="0.2875" />
@@ -39,6 +40,7 @@
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_tab_third.xml" value="0.26614583333333336" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/item_grid.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/item_linear.xml" value="0.2875" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/item_staggered.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/menu_overflow.xml" value="0.22" />
       </map>
     </option>
