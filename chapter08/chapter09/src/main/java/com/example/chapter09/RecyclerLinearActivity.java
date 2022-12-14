@@ -24,6 +24,8 @@ public class RecyclerLinearActivity extends AppCompatActivity {
         RecyclerView rv_linear = findViewById(R.id.rv_linear);
         // 创建一个垂直方向的线性布局管理器
         LinearLayoutManager manager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        manager.setOrientation(RecyclerView.HORIZONTAL);
+        manager.setReverseLayout(true);
         rv_linear.setLayoutManager(manager); // 设置循环视图的布局管理器
         // 构建一个公众号列表的线性适配器
         RecyclerLinearAdapter adapter = new RecyclerLinearAdapter(this, NewsInfo.getDefaultList());
