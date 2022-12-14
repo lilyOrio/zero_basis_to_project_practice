@@ -30,14 +30,11 @@ public class TabPagerActivity extends AppCompatActivity {
             }
         });
 
-        rg_tabbar.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
-                for (int i = 0; i < rg_tabbar.getChildCount(); i++) {
-                    RadioButton tab = (RadioButton) rg_tabbar.getChildAt(i);
-                    if (tab.getId() == checkedId){
-                        vp_content.setCurrentItem(i);
-                    }
+        rg_tabbar.setOnCheckedChangeListener((radioGroup, checkedId) -> {
+            for (int i = 0; i < rg_tabbar.getChildCount(); i++) {
+                RadioButton tab = (RadioButton) rg_tabbar.getChildAt(i);
+                if (tab.getId() == checkedId){
+                    vp_content.setCurrentItem(i);
                 }
             }
         });

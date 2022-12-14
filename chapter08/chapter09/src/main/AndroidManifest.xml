@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppCompatTheme">
         <activity
-            android:name=".RecyclerStaggeredActivity"
+            android:name=".RecyclerDynamicActivity"
             android:exported="true"
             android:label="@string/title_activity_tab_navigation">
             <intent-filter>
