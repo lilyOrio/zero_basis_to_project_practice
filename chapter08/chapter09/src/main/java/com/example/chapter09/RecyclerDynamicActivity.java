@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -60,7 +61,7 @@ public class RecyclerDynamicActivity extends AppCompatActivity implements View.O
 
     @Override
     public void onItemClick(View view, int position) {
-        String desc = String.format("您点击了第%d项，标题是%s", position + 1,
+        @SuppressLint("DefaultLocale") String desc = String.format("您点击了第%d项，标题是%s", position + 1,
                 mPublicList.get(position).title);
         Toast.makeText(this, desc, Toast.LENGTH_SHORT).show();
     }
