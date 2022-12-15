@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppCompatTheme">
         <activity
-            android:name=".SwipeRecyclerActivity"
+            android:name=".ViewPager2RecyclerActivity"
             android:exported="true"
             android:label="@string/title_activity_tab_navigation">
             <intent-filter>
