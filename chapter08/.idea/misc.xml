@@ -36,7 +36,9 @@
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_layout.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_tab_pager.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_toolbar.xml" value="0.2875" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_view_pager2_fragment.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/activity_view_pager2_recycler.xml" value="0.2875" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_blank.xml" value="0.26614583333333336" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_book_cover.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_tab_first.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/fragment_tab_second.xml" value="0.2453125" />
@@ -46,6 +48,8 @@
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/item_mobile.xml" value="0.3333333333333333" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/item_staggered.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/layout/menu_overflow.xml" value="0.22" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/menu/bottom_nav_menu.xml" value="0.26666666666666666" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter09/src/main/res/menu/menu_overflow.xml" value="0.26666666666666666" />
       </map>
     </option>
   </component>
