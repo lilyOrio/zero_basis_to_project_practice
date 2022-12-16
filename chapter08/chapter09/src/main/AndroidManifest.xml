@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppCompatTheme">
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".ViewPager2FragmentActivity"
+            android:name=".DepartmentStoreActivity"
+            android:theme="@style/AppCompatTheme"
             android:exported="true"
             android:label="@string/title_activity_tab_navigation">
             <intent-filter>
