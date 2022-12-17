@@ -2,6 +2,7 @@ package com.example.chapter09.fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
@@ -12,7 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.chapter09.R;
+import com.example.chapter09.adapter.ClassPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +27,6 @@ public class DepartmentClassFragment extends Fragment {
     private List<String> mTitleList = new ArrayList<String>(); // 标题文字列表
 
     public DepartmentClassFragment() {
-        // Required empty public constructor
     }
 
 
@@ -42,8 +44,14 @@ public class DepartmentClassFragment extends Fragment {
         TabLayout tab_title = mView.findViewById(R.id.tab_title);
         ViewPager2 vp2_content = mView.findViewById(R.id.vp2_content);
 
-
-
+        ClassPagerAdapter adapter = new ClassPagerAdapter(mActivity, mTitleList);
+        vp2_content.setAdapter(adapter); // 设置二代翻页视图的适配器
+        new TabLayoutMediator(tab_title, vp2_content, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                tab.setText(mTitleList.get(position));
+            }
+        }).attach();
         return mView;
     }
 }

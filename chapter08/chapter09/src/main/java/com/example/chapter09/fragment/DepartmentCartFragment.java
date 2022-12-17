@@ -2,6 +2,8 @@ package com.example.chapter09.fragment;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -10,57 +12,18 @@ import android.view.ViewGroup;
 
 import com.example.chapter09.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link DepartmentCartFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class DepartmentCartFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public DepartmentCartFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment DepartmentCartFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static DepartmentCartFragment newInstance(String param1, String param2) {
-        DepartmentCartFragment fragment = new DepartmentCartFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    protected View mView; // 声明一个视图对象
+    protected AppCompatActivity mActivity; // 声明一个活动对象
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_department_cart, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mActivity = (AppCompatActivity) getActivity();
+        mView = inflater.inflate(R.layout.fragment_department_cart, container, false);
+        // 从布局文件中获取名叫tl_head的工具栏
+        Toolbar tl_head = mView.findViewById(R.id.tl_head);
+        tl_head.setTitle("购物车"); // 设置工具栏的标题文字
+        mActivity.setSupportActionBar(tl_head); // 使用tl_head替换系统自带的ActionBar
+        return mView;
     }
 }
