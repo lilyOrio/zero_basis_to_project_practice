@@ -17,11 +17,40 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
+//            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 自定义输出配置
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称类似test_v1.0_huawei.apk
+                        def fileName = "test_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        outputFileName = fileName
+                    }
+                }
+            }
         }
     }
+
+    flavorDimensions "versionCode" // 指定风味维度。多渠道打包需要
+
+    // 指定产品风味（下面一共设定了五种风味：华为、荣耀、小米、OPPO、vivo）
+    productFlavors {
+        huawei {}
+        rongyao {}
+        xiaomi {}
+        oppo {}
+        vivo {}
+    }
+
+
+    // 遍历每种风味，分别对AndroidManifest.xml的UMENG_CHANNEL_VALUE赋值
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
