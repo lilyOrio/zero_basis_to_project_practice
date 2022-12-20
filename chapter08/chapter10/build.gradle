@@ -17,8 +17,9 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled false// true 开启代码混淆功能
 //            shrinkResources true
+            //'proguard-rules.pro被指定作为混淆规则文件
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             // 自定义输出配置
             applicationVariants.all { variant ->
