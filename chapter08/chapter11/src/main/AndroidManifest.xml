@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".SignatureActivity"
+            android:name=".ScaleRotateActivity"
             android:exported="true"
             android:theme="@style/AppCompatTheme">
             <intent-filter>
