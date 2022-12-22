@@ -27,6 +27,7 @@ public class SignatureView extends View {
     private int mStrokeWidth = 3; // 画笔线宽
     private PathPosition mPathPos = new PathPosition(); // 路径位置
     private List<PathPosition> mPathList = new ArrayList<>(); // 路径位置列表
+    private List<List<PathPosition>> mStrokeList = new ArrayList<>();//笔画列表
     private PointF mLastPos; // 上次触摸点的横纵坐标
 
     public SignatureView(Context context) {
@@ -35,7 +36,7 @@ public class SignatureView extends View {
 
     public SignatureView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        if (attrs != null){
+        if (attrs != null) {
             // 根据SignatureView的属性定义，从布局文件中获取属性数组描述
             TypedArray attrArray = getContext().obtainStyledAttributes(attrs, R.styleable.SignatureView);
             // 根据属性描述定义，获取布局文件中的画笔颜色
@@ -64,18 +65,23 @@ public class SignatureView extends View {
 
     // 撤销上一次绘制
     public void revoke() {
-        if (mPathList.size() > 0) {
+        if (mStrokeList.size() > 1) {
             // 移除路径位置列表中的最后一个路径
-            mPathList.remove(mPathList.size() - 1);
+            mStrokeList.remove(mStrokeList.size() - 1);
             mPath.reset(); // 重置路径对象
-            for (int i = 0; i < mPathList.size(); i++) {
-                PathPosition pp = mPathList.get(i);
-                // 移动到上一个坐标点
-                mPath.moveTo(pp.prePos.x, pp.prePos.y);
-                // 连接上一个坐标点和下一个坐标点
-                mPath.quadTo(pp.prePos.x, pp.prePos.y, pp.nextPos.x, pp.nextPos.y);
+            for (int j = 0; j < mStrokeList.size(); j++) {
+                for (int i = 0; i < mStrokeList.get(j).size(); i++) {
+                    PathPosition pp = mStrokeList.get(j).get(i);
+                    // 移动到上一个坐标点
+                    mPath.moveTo(pp.prePos.x, pp.prePos.y);
+                    // 连接上一个坐标点和下一个坐标点
+                    mPath.quadTo(pp.prePos.x, pp.prePos.y, pp.nextPos.x, pp.nextPos.y);
+                }
+                postInvalidate(); // 立即刷新视图（线程安全方式）
             }
-            postInvalidate(); // 立即刷新视图（线程安全方式）
+        } else if (mStrokeList.size() <= 1) {
+            clear();
+            mStrokeList.clear();
         }
     }
 
@@ -103,6 +109,8 @@ public class SignatureView extends View {
             case MotionEvent.ACTION_UP: // 松开手指
                 // 连接上一个坐标点和当前坐标点
                 mPath.quadTo(mLastPos.x, mLastPos.y, event.getX(), event.getY());
+                mStrokeList.add(mPathList);
+                mPathList = new ArrayList<>();
                 break;
         }
         mLastPos = new PointF(event.getX(), event.getY());
