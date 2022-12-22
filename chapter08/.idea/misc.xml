@@ -66,6 +66,7 @@
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/drawable/shape_edit_normal.xml" value="0.19" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_back_press.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_click_long.xml" value="0.26614583333333336" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_drawer_layout.xml" value="0.14666666666666667" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_event_dispatch.xml" value="0.1" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_event_intercept.xml" value="0.26666666666666666" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_key_hard.xml" value="0.2875" />
@@ -76,6 +77,8 @@
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_slide_direction.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_touch_multiple.xml" value="0.2875" />
         <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/activity_touch_single.xml" value="0.2875" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/banner_pager.xml" value="0.2875" />
+        <entry key="..\:/demo/zero_basis_to_project_practice/chapter08/chapter11/src/main/res/layout/item_select.xml" value="0.2875" />
       </map>
     </option>
   </component>
