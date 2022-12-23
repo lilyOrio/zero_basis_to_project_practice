@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".DrawerLayoutActivity"
+            android:name=".PullRefreshActivity"
             android:exported="true"
             android:theme="@style/AppCompatTheme">
             <intent-filter>
