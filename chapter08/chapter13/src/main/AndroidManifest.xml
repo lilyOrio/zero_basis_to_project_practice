@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".MainActivity"
+            android:name=".ThreadUiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HandlerMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkManagerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
